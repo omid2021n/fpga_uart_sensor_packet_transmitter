@@ -6,7 +6,7 @@
 // -----------------------------------------------------------------------
 module uart_tx #(
   parameter int SYS_CLK   = 25_000_000, // Hz
-  parameter int BAUD_RATE = 9600,
+  parameter int BAUD_RATE = 115200,
   parameter int DATA_BITS = 8
 )(
   input  logic clk,
