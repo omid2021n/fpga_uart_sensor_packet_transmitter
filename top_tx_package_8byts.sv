@@ -4,7 +4,7 @@
 // Sends 6 x 12-bit temperature readings to the PC over uart_tx, as
 // a 13-byte packet, once every PULSE_DIVIDE clock cycles.
 // -----------------------------------------------------------------------
-module top_tx_package_8 #(
+module top_tx_package_8byts#(
   parameter int SYS_CLK      = 25_000_000,
   parameter int PULSE_DIVIDE = SYS_CLK / 2   // cycles between sends;
                                               // override for fast sim,
